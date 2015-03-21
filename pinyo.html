@@ -1,0 +1,57 @@
+<head>
+  <title>Pinyo</title>
+</head>
+
+<body>
+  {{> rounds}}
+  {{> enemyTeam}}
+</body>
+
+<template name="rounds">
+  <h1>Fordulók</h1>
+  <ol>
+    {{#each rounds}}
+    <li>
+      <div  class="round {{selectedRound}}">Forduló {{num}}
+        Kezdődik {{startsOn}}
+        <ul>
+          {{#each matches}}
+          <li class="{{myMatch}} {{myNextMatch}}">
+            {{teamName homeTeam}} - {{teamName awayTeam}}
+            {{matchStarts}}
+            {{#each results}}
+            <ul>
+              <li>{{p1}} - {{p2}}: {{s1}} - {{s2}}</li>
+            </ul>
+            {{/each}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </li>
+    {{/each}}
+  </ol>
+</template>
+
+
+
+<template name="enemyTeam">
+  Enemy team
+  {{#with team}}
+  <div class="team-name">
+    <h3>{{name}}</h3>
+  </div>
+  <div class="address">
+    {{address}}
+  </div>
+  <div class="players">
+    <ol>
+      {{#each players}}
+      <li class="player">
+        {{name}}: {{score}}
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+  {{/with}}
+</template>

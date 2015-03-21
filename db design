@@ -1,0 +1,52 @@
+osztaly:
+regio: II-XII-XXI. kerületi
+osztály: 2
+csoport: 1
+period: (pl 2014.10 - 2015.5)
+csapatok[]
+fordulok[]
+
+
+csapat:
+id
+nev
+palya cim
+kezdes
+asztal
+labda
+palyaválasztási engedmény (Csepel, Csintalan Csibék)
+jatekoslista[]:
+  nev
+  engszam
+  kiszamithato:
+    csapat
+    merkozes
+    gyozelem,
+    vereseg
+    arany
+
+
+
+fordulok:
+kezdete
+round
+meccsek[]:
+  csapatid1 (palyavalaszto)
+  csapatid2
+  kezdes (kiszamithato a palyavalaszto csapat idopontjabol)
+  eredmeny[]:
+    [jid1, jid2, X, Y]
+    ...
+  nyertes(kiszamithato)
+
+
+
+Views:
+
+tabella (bajnooksag allasa)
+meccs,
+nyert,
+dontetlen,
+vesztett,
+pont,
+meccsarany

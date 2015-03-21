@@ -1,0 +1,18 @@
+/* CSS declarations go here */
+.selectedRound {
+  padding: 2px 6px;
+  background: #9be;
+  font-weight: bold;
+}
+
+.myMatch {
+  background: yellow;
+}
+
+.myNextMatch {
+  background: red;
+}
+
+.round{
+  border: 1px black;
+}
