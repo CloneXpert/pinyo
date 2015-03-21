@@ -1,3 +1,6 @@
+Template.registerHelper('formatDate', function(date) {
+  return moment(date).format('LLLL');
+});
 
 Template.rounds.helpers({
   rounds: function() {
@@ -27,9 +30,7 @@ Template.rounds.helpers({
       var roundStart = Template.parentData().startsOn;
       matchTime = homeTeam.matchTime.split(":");
       return moment(roundStart)
-      .add({days: homeTeam.matchDay, hours: matchTime[0], minutes: matchTime[1]})
-      .format("LLLL");
-      // .format("dddd, MMMM Do YYYY, H:mm");
+      .add({days: homeTeam.matchDay, hours: matchTime[0], minutes: matchTime[1]});
     }
   },
   myMatch: function(){

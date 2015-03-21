@@ -3,55 +3,70 @@
 </head>
 
 <body>
-  {{> rounds}}
-  {{> enemyTeam}}
+  <div class="container">
+    <div class="row">
+      {{> rounds}}
+      {{> enemyTeam}}
+    </div>
+  </div>
 </body>
 
 <template name="rounds">
-  <h1>Fordulók</h1>
-  <ol>
-    {{#each rounds}}
-    <li>
-      <div  class="round {{selectedRound}}">Forduló {{num}}
-        Kezdődik {{startsOn}}
-        <ul>
+  <div class="col-md-6">
+    <div class="header">
+      Fordulók
+    </div>
+    <div class="col-md-6">
+      {{#each rounds}}
+      <div class="round {{selectedRound}}">
+        Forduló {{num}} - {{formatDate startsOn}}
+        <div class="">
           {{#each matches}}
-          <li class="{{myMatch}} {{myNextMatch}}">
+          <div class="{{myMatch}} {{myNextMatch}}">
             {{teamName homeTeam}} - {{teamName awayTeam}}
-            {{matchStarts}}
+            {{formatDate matchStarts}}
             {{#each results}}
-            <ul>
-              <li>{{p1}} - {{p2}}: {{s1}} - {{s2}}</li>
-            </ul>
+            <div class="">
+              <div>{{p1}} - {{p2}}: {{s1}} - {{s2}}</div>
+            </div>
             {{/each}}
-          </li>
+          </div>
           {{/each}}
-        </ul>
+        </div>
       </div>
-    </li>
-    {{/each}}
-  </ol>
+      {{/each}}
+    </div>
+  </div>
 </template>
 
 
 
 <template name="enemyTeam">
-  Enemy team
-  {{#with team}}
-  <div class="team-name">
-    <h3>{{name}}</h3>
+  <div class="col-md-6">
+    <div class="header">
+      Ellenfél csapata
+    </div>
+    {{#with team}}
+    <div class="team-name">
+      <h3>{{name}}</h3>
+    </div>
+    <address>
+      {{address}}
+    </address>
+    {{table}}
+    {{ball}}
+    {{#if rightForPermVenue}}
+    <h2>Mindig pályaválasztó</h2>
+    {{/if}}
+    <div class="players">
+      <div>
+        {{#each players}}
+        <div class="player">
+          {{name}}: {{score}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{/with}}
   </div>
-  <div class="address">
-    {{address}}
-  </div>
-  <div class="players">
-    <ol>
-      {{#each players}}
-      <li class="player">
-        {{name}}: {{score}}
-      </li>
-      {{/each}}
-    </ol>
-  </div>
-  {{/with}}
 </template>
