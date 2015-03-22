@@ -1,3 +1,7 @@
+Meteor.subscribe('seasons');
+Meteor.subscribe('teams');
+Meteor.subscribe('rounds');
+
 Template.registerHelper('formatDate', function(date) {
   return moment(date).format('LLLL');
 });
