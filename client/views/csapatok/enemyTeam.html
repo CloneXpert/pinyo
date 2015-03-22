@@ -1,0 +1,29 @@
+<template name="enemyTeam">
+  <div class="col-md-6">
+    <div class="header">
+      Ellenfél csapata
+    </div>
+    {{#with team}}
+    <div class="team-name">
+      <h3><a href="{{pathFor 'teamPage'}}">{{name}}</a></h3>
+    </div>
+    <address>
+      {{address}}
+    </address>
+    {{table}}
+    {{ball}}
+    {{#if rightForPermVenue}}
+    <h2>Mindig pályaválasztó</h2>
+    {{/if}}
+    <div class="players">
+      <div>
+        {{#each players}}
+        <div class="player">
+          {{name}}: {{score}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{/with}}
+  </div>
+</template>

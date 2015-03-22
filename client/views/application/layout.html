@@ -1,81 +1,8 @@
 <template name="layout">
   <div class="container">
-    <header class="navbar navbar-default" role="navigation">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="{{pathFor 'main'}}">Pinyó</a>
-      </div>
-    </header>
+    {{>header}}
     <div id="main">
       {{> yield}}
     </div>
-  </div>
-</template>
-
-<template name="main">
-  <div class="container">
-    <div class="row">
-      {{> rounds}}
-      {{> enemyTeam}}
-    </div>
-  </div>
-</template>
-
-<template name="rounds">
-  <div class="col-md-6">
-    <div class="header">
-      Fordulók
-    </div>
-    <div class="col-md-6">
-      {{#each rounds}}
-      <div class="round {{selectedRound}}">
-        Forduló {{num}} - {{formatDate startsOn}}
-        <div class="">
-          {{#each matches}}
-          <div class="{{myMatch}} {{myNextMatch}}">
-            {{teamName homeTeam}} - {{teamName awayTeam}}
-            {{formatDate matchStarts}}
-            {{#each results}}
-            <div class="">
-              <div>{{p1}} - {{p2}}: {{s1}} - {{s2}}</div>
-            </div>
-            {{/each}}
-          </div>
-          {{/each}}
-        </div>
-      </div>
-      {{/each}}
-    </div>
-  </div>
-</template>
-
-
-
-<template name="enemyTeam">
-  <div class="col-md-6">
-    <div class="header">
-      Ellenfél csapata
-    </div>
-    {{#with team}}
-    <div class="team-name">
-      <h3>{{name}}</h3>
-    </div>
-    <address>
-      {{address}}
-    </address>
-    {{table}}
-    {{ball}}
-    {{#if rightForPermVenue}}
-    <h2>Mindig pályaválasztó</h2>
-    {{/if}}
-    <div class="players">
-      <div>
-        {{#each players}}
-        <div class="player">
-          {{name}}: {{score}}
-        </div>
-        {{/each}}
-      </div>
-    </div>
-    {{/with}}
   </div>
 </template>

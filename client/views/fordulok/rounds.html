@@ -1,0 +1,27 @@
+<template name="rounds">
+  <div class="col-md-6">
+    <div class="header">
+      Fordulók
+    </div>
+    <div class="col-md-6">
+      {{#each rounds}}
+      <div class="round {{selectedRound}}">
+        Forduló {{num}} - {{formatDate startsOn}}
+        <div class="">
+          {{#each matches}}
+          <div class="{{myMatch}} {{myNextMatch}}">
+            {{teamName homeTeam}} - {{teamName awayTeam}}
+            {{formatDate matchStarts}}
+            {{#each results}}
+            <div class="">
+              <div>{{p1}} - {{p2}}: {{s1}} - {{s2}}</div>
+            </div>
+            {{/each}}
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</template>
