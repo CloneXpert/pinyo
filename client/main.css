@@ -1,4 +1,6 @@
 /* CSS declarations go here */
+[data-required] label:after {content: '*'}
+
 .selectedRound {
   display: block;
   background: #e8eaf5;

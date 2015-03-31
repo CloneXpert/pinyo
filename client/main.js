@@ -3,6 +3,8 @@ Template.registerHelper('formatDate', function(date) {
   return moment(date).format('LLLL');
 });
 
+Template.registerHelper('Schemas', Schemas);
+
 Template.rounds.helpers({
   rounds: function() {
     nextRound = Rounds.findOne({startsOn: {$gt: new Date()}});
@@ -29,9 +31,11 @@ Template.rounds.helpers({
 
       // console.log(moment.locale());
       var roundStart = Template.parentData().startsOn;
-      matchTime = homeTeam.matchTime.split(":");
-      return moment(roundStart)
-      .add({days: homeTeam.matchDay, hours: matchTime[0], minutes: matchTime[1]});
+      if(homeTeam.matchTime) {
+        matchTime = homeTeam.matchTime.split(":");
+        return moment(roundStart)
+        .add({days: homeTeam.matchDay, hours: matchTime[0], minutes: matchTime[1]});
+      }
     }
   },
   myMatch: function(){

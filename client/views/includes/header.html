@@ -12,7 +12,8 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-          {{#if currentUser}}<li><a href="{{pathFor 'newTeam'}}">Új csapat</a></li>{{/if}}
+          {{#if currentUser}}<li><a href="{{pathFor 'newTeamForm'}}">Új csapat</a></li>{{/if}}
+          {{#if currentUser}}<li><a href="{{pathFor 'newSeasonForm'}}">Új szezon</a></li>{{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {{> loginButtons}}
