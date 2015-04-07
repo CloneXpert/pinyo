@@ -12,6 +12,7 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
+          <li><a href="{{pathFor 'seasonsList'}}">Bajnokságok</a></li>
           {{#if currentUser}}<li><a href="{{pathFor 'newTeamForm'}}">Új csapat</a></li>{{/if}}
           {{#if currentUser}}<li><a href="{{pathFor 'newSeasonForm'}}">Új szezon</a></li>{{/if}}
         </ul>
