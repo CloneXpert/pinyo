@@ -1,0 +1,15 @@
+<template name="seasonItem">
+  <h1>{{region}}</h1>
+  <div>
+    Osztály {{division}}
+  </div>
+  <div>
+    Csoport {{group}}
+  </div>
+  {{#each teams}}
+  <div>
+    {{name}}
+  </div>
+  {{/each}}
+  <a href="{{pathFor 'newTeamForm'}}">Új csapat</a>
+</template>

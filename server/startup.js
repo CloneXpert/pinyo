@@ -102,7 +102,7 @@ Meteor.startup(function () {
 
   var kerII = Seasons.insert({
     region: "II-XII-XXI. kerületi",
-    class: 2,
+    division: 2,
     group: 1,
     periodStart: new Date(2014,10,8),
     periodEnd: new Date(2015,05,18),

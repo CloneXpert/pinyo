@@ -1,5 +1,5 @@
 <template name="seasonsList">
   {{#each seasons}}
-  {{region}}
+  <a href="{{pathFor 'seasonItem'}}">{{region}}</a>
   {{/each}}
 </template>
