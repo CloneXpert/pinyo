@@ -3,7 +3,8 @@ Meteor.publish('season', function(seasonId) {  return Seasons.find({season:seaso
 
 Meteor.publish('teams', function(seasonId) {
   check(seasonId, String);
-  return Teams.find({season: seasonId});
+  var season = Seasons.findOne(seasonId);
+  return Teams.find({_id: { $in: season.teams} });
  });
 
 Meteor.publish('rounds', function(seasonId) {
