@@ -11,8 +11,30 @@ Meteor.startup(function () {
   Teams.remove({});
   Rounds.remove({});
 
-  var morgan = Teams.insert({
-    name: "Morgan Stanley SK",
+  var morgan2 = Teams.insert({
+    name: "Morgan Stanley SK 2",
+    address: "VIII.kerület Elnök utca 1. - Joo pont",
+    matchDay: 3,
+    matchTime: "18:30",
+    table: "JOOLA",
+    ball: "DHS",
+    rightForPermVenue: false,
+    players: [
+      { name:"Csővári Dani", id: "dani", license: "111"  },
+      { name:"Pesti Pál", id:"pestipal", license: "222" }
+      /*
+      "Csővári Dániel",
+      "Galbáts Borisz",
+      "Dr. Kék László",
+      "Nyilas Attila",
+      "Pesti Pál",
+      "Dominic Ward"
+      */
+    ]
+  });
+
+  var morgan1 = Teams.insert({
+    name: "Morgan Stanley SK 2",
     address: "VIII.kerület Elnök utca 1. - Joo pont",
     matchDay: 2,
     matchTime: "18:30",
@@ -22,15 +44,6 @@ Meteor.startup(function () {
     players: [
       { name:"Béla Tamás", id: "belat", license: "123"  },
       { name:"Dr. Bodon Ferenc", id:"bodonfe", license: "234" }
-      /*
-      "Csővári Dániel",
-      "Galbáts Borisz",
-      "Hirs Zoltán",
-      "Dr. Kék László",
-      "Nyilas Attila",
-      "Pesti Pál",
-      "Dominic Ward"
-      */
     ]
   });
 
@@ -62,14 +75,28 @@ Meteor.startup(function () {
     ]
   });
 
+  var dunakanyar = Teams.insert({
+    name: "Dunakanyar Asztalitenisz SK",
+    address: "XIV.kerület Róna utca 86-100. (Postás)",
+    matchDay: 3,
+    matchTime: "18:00",
+    table: "Yasaka",
+    ball: "Nittaku",
+    rightForPermVenue: false,
+    players: [
+      {name: "Duna Bácsi", id:"dask1"},
+      {name: "Kanyar Néni", id: "dask2"}
+    ]
+  });
+
   var round16 = Rounds.insert({
     startsOn: new Date(2015,00,19),
     num: 16,
     matches: [
       {
-        homeTeam: morgan,
+        homeTeam: morgan1,
         awayTeam: dorsum,
-        //startsOn: should be Date(2015,01,21) because morgan is at home and they play on Wed
+        //startsOn: should be Date(2015,01,21) because morgan1 is at home and they play on Wed
         results: [
           { p1: "belat", p2:"borov", s1: 3, s2: 1},
           { p1: "bodonfe", p2: "fenesi", s1: 3, s2:0}
@@ -83,7 +110,7 @@ Meteor.startup(function () {
     num: 25,
     matches: [
       {
-        homeTeam: morgan,
+        homeTeam: morgan1,
         awayTeam: pingponghaz
       }
     ]
@@ -100,13 +127,34 @@ Meteor.startup(function () {
     ]
   });
 
-  var kerII = Seasons.insert({
-    region: "II-XII-XXI. kerületi",
+  var round3ker1 = Rounds.insert({
+    startsOn: new Date(2015,8,21),
+    num: 3,
+    matches: [
+      {
+        homeTeam: morgan1,
+        awayTeam: dunakanyar
+      }
+    ]
+  });
+
+  var kerIIcsop2tavasz = Seasons.insert({
+    region: "II-XII-XXI. kerületi Másodosztály II. csoport",
     division: 2,
-    group: 1,
+    group: 2,
     periodStart: new Date(2014,10,8),
     periodEnd: new Date(2015,05,18),
-    teams: [morgan, dorsum, pingponghaz],
+    teams: [morgan2, dorsum, pingponghaz],
     rounds: [round16, round25, round26]
+  });
+
+  var kerIcsop2oszi = Seasons.insert({
+    region: "II-XII-XXI. kerületi Első osztály I. csoport",
+    division: 1,
+    group: 2,
+    periodStart: new Date(2015,8,7),
+    periodEnd: new Date(2016,11,14),
+    teams: [morgan1, dunakanyar],
+    rounds: [round3ker1]
   });
 });
