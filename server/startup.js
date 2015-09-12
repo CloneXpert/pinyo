@@ -165,6 +165,7 @@ Meteor.startup(function () {
   });
 
   var kerIIcsop2tavasz = Seasons.insert({
+    _id: "kerIIcsop2tavasz",
     region: "II-XII-XXI. kerületi Másodosztály II. csoport",
     division: 2,
     group: 2,
@@ -175,6 +176,7 @@ Meteor.startup(function () {
   });
 
   var kerIcsop2oszi = Seasons.insert({
+    _id: "kerIcsop2oszi",
     region: "II-XII-XXI. kerületi Első osztály I. csoport",
     division: 1,
     group: 2,
