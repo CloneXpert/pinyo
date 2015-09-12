@@ -1,24 +1,14 @@
 /* CSS declarations go here */
 [data-required] label:after {content: '*'}
 
-.selectedRound {
-  display: block;
-  background: #e8eaf5;
-}
-
 .myMatch {
   display: block;
   background: #8dcaff;
+  padding: 3px;
 }
 
 .myNextMatch {
   display: block;
   background: #69bbff;
-}
-
-.round{
-  border: 1px black;
-}
-
-.header {
+  padding: 3px;
 }

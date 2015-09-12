@@ -3,14 +3,18 @@
     <div class="header">
       Fordulók
     </div>
-    <div class="col-md-6">
+    <div class="list-group">
       {{#each rounds}}
-      <div class="round {{selectedRound}}">
-        Forduló {{num}} - {{formatDate startsOn}}
-        <div class="">
+      <div class="list-group-item round {{selectedRound}}">
+        <h4 class="list-group-item-heading">
+          Forduló {{num}} - {{formatDate startsOn}}
+        </h4>
+        <div class="list-group">
           {{#each matches}}
           <div class="{{myMatch}} {{myNextMatch}}">
-            {{teamName homeTeam}} - {{teamName awayTeam}}
+            <h5 class="">
+              {{teamName homeTeam}} - {{teamName awayTeam}}
+            </h5>
             {{formatDate matchStarts}}
             {{#each results}}
             <div class="">

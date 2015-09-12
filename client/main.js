@@ -1,3 +1,4 @@
+myTeamName = "Morgan Stanley SK 1";
 
 Template.registerHelper('formatDate', function(date) {
   return moment(date).format('LLLL');
@@ -15,7 +16,7 @@ Template.rounds.helpers({
   },
 
   selectedRound: function () {
-    return Session.equals('nextRoundId', this._id) ? 'selectedRound' : '';
+    return Session.equals('nextRoundId', this._id) ? 'active' : '';
   },
 
   teamName: function(teamId) {
@@ -39,12 +40,14 @@ Template.rounds.helpers({
     }
   },
   myMatch: function(){
-    myTeam = Teams.findOne({name: "Morgan Stanley SK"});
-    match = _.find(Template.parentData().matches, function(match) {
-      return match.homeTeam === myTeam._id || match.awayTeam === myTeam._id;
-    });
-    if (match) {
-      return "myMatch";
+    myTeam = Teams.findOne({name: myTeamName});
+    if(myTeam) {
+      match = _.find(Template.parentData().matches, function(match) {
+        return match.homeTeam === myTeam._id || match.awayTeam === myTeam._id;
+      });
+      if (match) {
+        return "myMatch";
+      }
     }
   },
   myNextMatch: function () {
@@ -52,7 +55,7 @@ Template.rounds.helpers({
     if(Template.parentData()._id !== selectedRoundId) {
       return;
     }
-    myTeam = Teams.findOne({name: "Morgan Stanley SK"});
+    myTeam = Teams.findOne({name: myTeamName});
     if(!myTeam) {
       return;
     }
@@ -79,7 +82,7 @@ Template.rounds.events({
 Template.enemyTeam.helpers({
   team: function() {
     team = Teams.findOne({_id: Session.get("enemyTeamId")});
-    //console.log(team);
+    console.log(team);
     return team;
   }
 });

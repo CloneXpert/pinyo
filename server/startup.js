@@ -33,8 +33,9 @@ Meteor.startup(function () {
     ]
   });
 
+  // my team implementation searches on name
   var morgan1 = Teams.insert({
-    name: "Morgan Stanley SK 2",
+    name: "Morgan Stanley SK 1",
     address: "VIII.kerület Elnök utca 1. - Joo pont",
     matchDay: 2,
     matchTime: "18:30",
@@ -77,6 +78,20 @@ Meteor.startup(function () {
 
   var dunakanyar = Teams.insert({
     name: "Dunakanyar Asztalitenisz SK",
+    address: "XIV.kerület Róna utca 86-100. (Postás)",
+    matchDay: 3,
+    matchTime: "18:00",
+    table: "Yasaka",
+    ball: "Nittaku",
+    rightForPermVenue: false,
+    players: [
+      {name: "Duna Bácsi", id:"dask1"},
+      {name: "Kanyar Néni", id: "dask2"}
+    ]
+  });
+
+  var barossgabor = Teams.insert({
+    name: "Baross Gabor SK",
     address: "XIV.kerület Róna utca 86-100. (Postás)",
     matchDay: 3,
     matchTime: "18:00",
@@ -138,6 +153,17 @@ Meteor.startup(function () {
     ]
   });
 
+  var round4ker1 = Rounds.insert({
+    startsOn: new Date(2015,8,29),
+    num: 4,
+    matches: [
+      {
+        homeTeam: morgan1,
+        awayTeam: barossgabor
+      }
+    ]
+  });
+
   var kerIIcsop2tavasz = Seasons.insert({
     region: "II-XII-XXI. kerületi Másodosztály II. csoport",
     division: 2,
@@ -155,6 +181,6 @@ Meteor.startup(function () {
     periodStart: new Date(2015,8,7),
     periodEnd: new Date(2016,11,14),
     teams: [morgan1, dunakanyar],
-    rounds: [round3ker1]
+    rounds: [round3ker1, round4ker1]
   });
 });
