@@ -1,0 +1,345 @@
+{
+  teams:[
+    {
+      "players": "I.osztály"
+    },
+    {
+      "team": "Angyalföldi Meteor"
+    },
+    {
+      "players": "Csima Viktor, Hamar Csaba, Kiss Attila, Kocsor Péter, Németi Norbert, Villy Róbert"
+    },
+    {
+      "team": "ANy. Biztonsági Nyomda SK II."
+    },
+    {
+      "players": "Andódy Tibor, Buday Gyula, Gyergyák György, Herendi Tamás, Hídvégi Lajos, József István, Mány Péter, Németh Gusztáv, Papp Endre, Pirisi István, Szopkó János"
+    },
+    {
+      "team": "Baross Gábor SK"
+    },
+    {
+      "players": "Komlódi Ferenc, Mayer János, Süveges Antal, Szöllősi Sándor, id.Vígh György, ifj.Vígh György, Vígh Zoltán"
+    },
+    {
+      "team": "Belvárosi Asztalitenisz Egyesület II."
+    },
+    {
+      "players": "Barna István, Dénes Pál, Hittmann László, dr.Páczay György, Pöstyéni Ferenc, Tar Csaba"
+    },
+    {
+      "team": "Belvárosi Asztalitenisz Egyesület III."
+    },
+    {
+      "players": "Duhonyiné Varsányi Anikó, dr.Fazekas István, Fazekas Róbert, Hatházi István, Juhász Gergő, Marjai Viktor, Szőts Viktor, Tokai Imre"
+    },
+    {
+      "team": "Budai XI SE IX.-Tömegsport"
+    },
+    {
+      "players": "Aranyi Gabriella, Ardai Emese, Bulla József, Kovács Viktória, Stroh Tamás, Szabó Géza, Szabó György, Takács János, Takácsné Beke Judit"
+    },
+    {
+      "team": "BVSC-Zugló Sportiskola VI."
+    },
+    {
+      "players": "Balkovics Áron, Domokos Bence, Gyöngyössy György, Hajdú Ákos, Karikás Gábor, Krebs Levente, Szabó Ádám, Tiszay Ádám, Vári-Kakas Andor"
+    },
+    {
+      "team": "Csepel-Sziget SE I."
+    },
+    {
+      "players": "Czibulya Bence, Fraknói Tamás, Jeszenszky Katalin, Katona István"
+    },
+    {
+      "team": "Csepel-Sziget SE II."
+    },
+    {
+      "players": [
+        "Alaksa Levente,",
+        "Kolozsvári Bálint, ifj.Metykó László, Pallagi Patrik, Strobel Soma, Schubert Balázs"
+      ]
+    },
+    {
+      "team": "Csepeli Vállalkozók Asztalitenisz Egyesülete II."
+    },
+    {
+      "players": "Káli Sándor, Lökös Árpád, Révfy Tibor, Varga Mihály"
+    },
+    {
+      "team": "Dunakanyar Asztalitenisz Sportkör"
+    },
+    {
+      "players": "G.Szalai István, Hencz Ferenc Zoltán, Kabók József, Németh László, Németh Sándor, Ország Aranka, Pfeil Gyula"
+    },
+    {
+      "team": "Főnix SK"
+    },
+    {
+      "players": "Bárd Attila, Bauer Péter, Király Krisztián, Klausz Zoltán, Nagy László, Radó Róbert"
+    },
+    {
+      "team": "Hidegkúti SC-Klebelsberg I."
+    },
+    {
+      "players": "Galovics Márk, Kelemen Gyula, Pénzes Károly, Sprok Antal, Zöldy Béla"
+    },
+    {
+      "team": "Hidegkúti SC-Klebelsberg II."
+    },
+    {
+      "players": "Deák Péter, Haszpra Zsolt, dr.Klekner Péter, Kis György, Lakos Gábor, Surányi Tamás, Szűcsné dr.Sólya Zsuzsanna, Tóth Mónika"
+    },
+    {
+      "team": "Hidegkúti SC-Klebelsberg III."
+    },
+    {
+      "players": "Bozsó József, Herendi-Szabó Csilla, Héjj Ádám, Lökös László, Németh Péter, Szigeti Szonja, Tamásovits Ádám, Tóth László"
+    },
+    {
+      "team": "Igazságügyi Sport Club II."
+    },
+    {
+      "players": "Csipák Péter, Czinder Mózes, Jáni Nándor, Keresztesi László, dr.Lövétei István, Magyar Viktória, id.Turbók Attila, Várnai Viktor"
+    },
+    {
+      "team": "Jövőbarát SK"
+    },
+    {
+      "players": "Bacskó Ádám, Csank Zsuzsanna, Csortos Tibor, Kollár László, Rakoncza Gábor, Schwarcz Sándor, Szabó Gábor"
+    },
+    {
+      "team": "Királynő SK"
+    },
+    {
+      "players": "Lengyel Zoltán, Németh Attila, Riesenberger Ernő, Szabó Kálmán, Szávuly Miklós"
+    },
+    {
+      "team": "Morgan Stanley SK I."
+    },
+    {
+      "players": "Béla Tamás, dr.Bodon Ferenc, dr.Kék László, Nyilas Attila"
+    },
+    {
+      "team": "mozgovideo.hu SK"
+    },
+    {
+      "players": "Herendi Gábor, Jónás Gábor, Máté Győző, Petőházi Imola, Rónaszéki László, Séra Lajos, Széll Péter, Wéber Ferenc"
+    },
+    {
+      "team": "Mustármag SK I."
+    },
+    {
+      "players": "Droppán Béla, Szentiványi Ildikó, Takács Attila, Takács Gábor, Takács Lajos, Takács Réka"
+    },
+    {
+      "team": "Mustármag SK II."
+    },
+    {
+      "players": "Domokos Róbert, Gulya Endre, Gyuris József, Juhász József, Marton József, Perjési László, Somogyi Ferenc"
+    },
+    {
+      "team": "Pénzügyőr SE-Kutyaütők"
+    },
+    {
+      "players": "Farkas Attila, Knakker Norbert, dr.Lengyel Csilla, Nagy Gábor, Nagy Tibor"
+    },
+    {
+      "team": "Pestújhelyi SC V."
+    },
+    {
+      "players": "Ángyán Károly, Bacsó Tiborné, Csetneky Attila, Gellén József, Holhos Sándor, Kovács Attila, Lázár Zsolt, Mitropulos Zoltán, Orosz Péter, Tatai Tamás, Zubonyai János"
+    },
+    {
+      "team": "Puskás DSK-Csintalan-Párducok"
+    },
+    {
+      "players": "dr.Csintalan László, Grynaeus László, Holecz Barna, Katona Ferenc, Kiss Norbert, Ludányi László, Németh András, Nyéki János, Simon Pál, Székely Ágnes, Tóbiás Zoltán, Tusa Györgyi"
+    },
+    {
+      "team": "Puskás DSK-Csintalan-Tornádó"
+    },
+    {
+      "players": "Bot László, Dániel János, Fritz Tamás, Gombos Ákos, Lehel László, Majoros József, Marosi Katalin, dr.Marosi Viktória, Sólyomi Péter, Széky Andor"
+    },
+    {
+      "team": "Szent Pál akadémia SE I."
+    },
+    {
+      "players": "Béres Sándor, Bíró István, Kőszegi János, Pálfy Gyula, Palkó Gábor, Piros Tamás, Romhányi Ádám, Steinbach Rajmund, Tóth Ferenc"
+    },
+    {
+      "team": "Szigeti SK I."
+    },
+    {
+      "players": "Bleitner Attila, Cseresznyés József, Király Attila, Szabó László, Szíjj László"
+    },
+    {
+      "team": "Szigeti SK II."
+    },
+    {
+      "players": "Almásy Károly, Csiszár János, Fekete Imre, Melis Ferenc, Szente József"
+    },
+    {
+      "team": "Szivárvány BSK I."
+    },
+    {
+      "players": "Borsodi Gábor, Gubi Róbert, Kovács Zoltán, Móricz Zsuzsanna"
+    },
+    {
+      "players": "II.osztály"
+    },
+    {
+      "team": "ÁNTSZ-Károlyi I."
+    },
+    {
+      "players": [
+        "Csizmazia Zsolt, Gut József, Kapitány Ferenc, Kiesswetter Ágoston, Réti Zoltán, Róka Gergely, Szabolcsi Ádám, Széplaky Zsolt,",
+        "Tolnay Ádám,",
+        "Tyukász Tamás",
+        ", Zsitva Miklós"
+      ]
+    },
+    {
+      "team": "ÁNTSZ-Károlyi II."
+    },
+    {
+      "players": "Baligács Tamás, Dócziné Varga Szilvia, Kurtz Péterné, Mészáros Nikoletta, Oláh Zsuzsanna, Rimányi Mária, Süle Zoltán, Verebélyi Luca."
+    },
+    {
+      "team": "Belvárosi Asztalitenisz Egyesület IV."
+    },
+    {
+      "players": "Csizmás Kata, Fehérné Tihanyi Kata, Hegyi Csaba, Hittmann Márta, Papp Zoltán, Seprős Richárd, Szűcs Huba, Varga Lóránt"
+    },
+    {
+      "team": "BKV Előre SC IV."
+    },
+    {
+      "players": "Abaházi László, Bonnyai Adrienn, Dunavölgyi Zsolt, Puska László, Szabó Lajos, Szöllősi Norbert"
+    },
+    {
+      "team": "Budai pingpong Klub"
+    },
+    {
+      "players": "Borsi Eszter, Frisch Ruben, Hegedűs Bence, Janzsó Gergely, Kálnoky Diána Tímea, Márki Dániel, Márki Gergely, Márki László, Varga Mihály"
+    },
+    {
+      "team": "Csepel-Sziget SE III."
+    },
+    {
+      "players": "Balogh Csaba, Beke Ferenc, Bodroghy Bence, Erős László, Fekete Sándor, Fraknói Ádám, Füzesi István, Hanzi Elek, Holl László, Horváth Zoltán, dr.Kiss Lajos, Misch Attila, Misch Tamás, Pásztor Zsolt, dr.Pohl Ödön, Ravasz Zsolt, Rózsahegyi Péter, Szalai Erzsébet, Szénási Tamás, Tolnai Gábor, Uszkai László, Windischné Koskai Judit"
+    },
+    {
+      "team": "Csepel-Sziget SE IV."
+    },
+    {
+      "players": "Algács Marcella, Gácsi Gergely, Hódi Emese, Magos Máté, Németh István, Szentgyörgyi-Horváth Bálint"
+    },
+    {
+      "team": "Csepeli Vállalkozók Asztalitenisz Egyesülete III."
+    },
+    {
+      "players": "Buronyi Tibor, Csiba László, Décsi Sándor, Kis-Verbiczai József, Varga Gyula"
+    },
+    {
+      "team": "Dorsum SK"
+    },
+    {
+      "players": "Baradziej Ákos, Borovszky Tamás, Juhász László, Kiss Dénes, Rákóczi Anita, Scherer Richárd, Südy Márton, Urbán Henriett, Valentini Ákos Tamás"
+    },
+    {
+      "team": "Hidegkúti SC-Klebelsberg IV."
+    },
+    {
+      "players": "Dessewffy László, Kálmán László, id.Korsós Ferenc, ifj.Korsós Ferenc, Marlok Zoltán, Mészáros Ferenc, Szamosi György, Vikor Beatrix"
+    },
+    {
+      "team": "Justitia SK"
+    },
+    {
+      "players": "dr.Durst Gyöngyvér, Hajdú Henrietta, Koronghy Zsuzsanna, Krakkó Dániel, Strausz Dávid, Strausz Hajnalka, Strausz Imre, Strausz Krisztián,"
+    },
+    {
+      "team": "Kancellária SE"
+    },
+    {
+      "players": "Földiné dr.Németh Zsuzsanna, Hódi Ágota, dr.Kiss Zoltán, Lantos Evelin, Mágori Ferencné, dr.Orbán Krisztina, Szebelédi János, Tímár-Geng György, Tóth Sámuel"
+    },
+    {
+      "team": "KFKI Petőfi SK VI."
+    },
+    {
+      "players": "Endrődi Ferenc, Hahn György, Hanyecz József, Lakatosné Barna Veronika, Lovassy László, Mészáros István, Oláh Róbert, Pigler János, Vas Lajos"
+    },
+    {
+      "team": "KFKI Petőfi SK női"
+    },
+    {
+      "players": "Asbóth Csilla, Béres János, Fodorné Bajnok Aranka, Hermann Andrea, Józsa András, Kátsik László, Lakatos István, Lieber Mária Katalin"
+    },
+    {
+      "team": "Külvárosi PC"
+    },
+    {
+      "players": "Gergely Attila, Lajtrik Gábor, Nagy Zsolt, Paulik László, Stróbl György, Tari Ferenc"
+    },
+    {
+      "team": "MTSE II."
+    },
+    {
+      "players": "Almagró Carmen, Czakó Zoltán, Huszain Inteiza, Katona László, Kéri Tamás, Rimóczi Gábor, Székelyné Burja Ilona, Tóth Irma"
+    },
+    {
+      "team": "Morgan Stanley SK II."
+    },
+    {
+      "players": "Anastasia Ionova, Csővári Dániel, Galbáts Borisz, Leonardo Ferro, Márton Balázs, Pesti Pál, Viljanac Vanda, Dominic Ward"
+    },
+    {
+      "team": "Multi Sportegyesület II."
+    },
+    {
+      "players": "Csonka Ferenc, Fütyü Lajos, Máté Andrea, Menyhárt Imre, Slobodan Matovic,"
+    },
+    {
+      "team": "Pénzügyőr SE-Csilla-billa"
+    },
+    {
+      "players": "dr.Békési Anikó, Bodnár Zoltán, Horváth József, Kalics József, Kiss László, Kristóf Sándor, Máté János, Matusek Adél, Molnárné Kovács Csilla, Polákovics Izabella, Sárközi Erzsébet, Séra Levente, Takács János"
+    },
+    {
+      "team": "Puskás DSK-Csintalan-Csibék"
+    },
+    {
+      "players": "Almási Bence, Finta András, Katona Dániel, Kristóf Pál, Leszták Kornél, Longo Paoló, Modrivich Máté, Nagy Rafael, Nagy Zoltán, Perlei Lóránt, Sokvári Olivér, Sólyomi Ádám, Sólyomi Tamás"
+    },
+    {
+      "team": "Szent Pál akadémia SE II."
+    },
+    {
+      "players": "Bíró Imre, Dinai István, Harmath Dávid, Krén Pál, ifj.Pálfy Gyula, Palkó Gábor, Pánczél Barnabás, Serhokk Károly, Spala György, Spala Sára, Steinbach János, Szabó József, Terék Zoltán, Vargha Ákos, Vu Hong Nam"
+    },
+    {
+      "team": "Szivárvány BSK II."
+    },
+    {
+      "players": [
+        "Biczó Andrea,",
+        "Dohány Zoltán, Fekete György, Gerlits Krisztián, Győri László, Homonyik Marcell, Johanidesz József, Kelecsényi Zoltán, Lengyel Károly, Pál László Bendegúz, Várhidi Zsuzsanna"
+      ]
+    },
+    {
+      "team": "Szivárvány BSK III."
+    },
+    {
+      "players": "Fülöp Diána, Görbe Iván, Homonyik Attila, Orosz Gábor, Papp Zoltán, Szabó Helga, Szondi Tibor, Ványai-Kovács Sándor"
+    },
+    {
+      "team": "Tömegsport SK"
+    },
+    {
+      "players": "Aknai József, Börzsönyi Ágnes, Csekéné Szegedi Mónika, Dániel Barbara, Kalmár Gábor, Maior Norbert, dr.Szabados Péter"
+    }
+  ]
+}
