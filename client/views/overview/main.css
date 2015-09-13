@@ -2,13 +2,19 @@
 [data-required] label:after {content: '*'}
 
 .myMatch {
-  display: block;
   background: #8dcaff;
   padding: 3px;
 }
 
 .myNextMatch {
-  display: block;
   background: #69bbff;
-  padding: 3px;
+}
+
+.myNextRound {
+  background: #666666;
+  font-size: 17px;
+}
+
+.selectedRound {
+  background: #7dbaff;
 }

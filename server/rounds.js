@@ -1,4 +1,4 @@
-{
+roundsRaw = {
   "round": [
     "1.forduló, 2015.szeptember 7.-",
     "2.forduló -szeptember 14.-",

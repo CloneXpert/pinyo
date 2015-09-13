@@ -11,12 +11,31 @@ Meteor.startup(function () {
   Teams.remove({});
   Rounds.remove({});
 
+   var kerIcsop2oszi = {
+     _id: "kerIcsop2oszi",
+     name: "II-XII-XXI. kerületi Első osztály I. csoport",
+     region: "II-XII-XXI. kerületi",
+     division: 1,
+     group: 2,
+     periodStart: new Date(2015,8,7),
+     periodEnd: new Date(2016,11,14),
+     teams: [],
+     rounds: []
+   };
+
    var teams = parseTeamDetails();
    _.each(teams, function(team){
-     Teams.insert(team);
+     kerIcsop2oszi.teams.push(Teams.insert(team));
    });
 
+   var rounds = parseRounds();
+   _.each(rounds, function(round){
+     resolveTeamsForRound(round);
+     kerIcsop2oszi.rounds.push(Rounds.insert(round));
+   });
 
+   Seasons.insert(kerIcsop2oszi);
+ /*
   var morgan2 = Teams.insert({
     name: "Morgan Stanley SK 2",
     address: "VIII.kerület Elnök utca 1. - Joo pont",
@@ -28,14 +47,6 @@ Meteor.startup(function () {
     players: [
       { name:"Csővári Dani", id: "dani", license: "111"  },
       { name:"Pesti Pál", id:"pestipal", license: "222" }
-      /*
-      "Csővári Dániel",
-      "Galbáts Borisz",
-      "Dr. Kék László",
-      "Nyilas Attila",
-      "Pesti Pál",
-      "Dominic Ward"
-      */
     ]
   });
 
@@ -191,6 +202,6 @@ Meteor.startup(function () {
     teams: [morgan1, dunakanyar],
     rounds: [round3ker1, round4ker1]
   });
-
+*/
 
 });

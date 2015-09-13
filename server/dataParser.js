@@ -42,11 +42,77 @@ parseTeamDetails = function() {
 
     if(teams[i] && playersList) {
       _.extend(teams[i], { players: playersList});
-      console.log(JSON.stringify(teams[i],null,2));
+      //console.log(JSON.stringify(teams[i],null,2));
     }
   }
+
+  //add placeholder when a match is not taking place
+ teams.push({
+    name: "x",
+    address: "-",
+    matchDay: 0,
+    matchTime: "0.0"
+  });
   return teams;
 }
+
+parseRounds = function() {
+  var maxNumOfRounds = 15;
+  var matchesPerRound = 8;
+  var rounds = [];
+  var firstMatch = new Date(2015,8,7,0,0,0,0);
+  var matchTime = firstMatch;
+  var matchNum = 0;
+  for(var roundNum = 1;roundNum<=maxNumOfRounds;roundNum++) {
+    //console.log(matchTime);
+    var round = {
+      startsOn: new Date(matchTime),
+      num: roundNum
+    };
+    var matches = [];
+    for(matchNum=0; matchNum < 8; matchNum++) {
+      var stage1 = roundsRaw.matches[(roundNum - 1) * matchesPerRound + matchNum].split(" - ");
+      var team1 = stage1[0];
+      var team2 = stage1[1];
+      var match = {};
+      if(stage1[1]) {
+        var i = stage1[1].search(/\d\d?:/);
+        if(i!==-1) {
+          team2 = stage1[1].substr(0, i-1);
+          var stage2 = stage1[1].match(/\d\d?:\d\d?/);
+          var scores = stage2[0].split(":");
+          var team1score = scores[0];
+          var team2score = scores[1];
+          match = {
+            homeTeamName: team1,
+            awayTeamName: team2,
+            homeTeamScore: team1score,
+            awayTeamScore: team2score,
+          };
+        } else {
+          match = {
+            homeTeamName: team1,
+            awayTeamName: team2,
+          };
+        }
+        matches.push(match);
+        //console.log(JSON.stringify(match, null, 2));
+        debugger;
+      }
+    }
+    _.extend(round, {matches: matches});
+    matchTime.setDate(matchTime.getDate()+7);
+    //console.log(JSON.stringify(round, null, 2));
+    rounds.push(round);
+  };
+  return rounds;
+}
+
+
+
+
+
+
 
 
 //[{name: "A"},{name: "B"}] , [{players: [{name: "p1"},{name: "p2"}]}]
