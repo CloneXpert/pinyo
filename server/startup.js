@@ -11,6 +11,12 @@ Meteor.startup(function () {
   Teams.remove({});
   Rounds.remove({});
 
+   var teams = parseTeamDetails();
+   _.each(teams, function(team){
+     Teams.insert(team);
+   });
+
+
   var morgan2 = Teams.insert({
     name: "Morgan Stanley SK 2",
     address: "VIII.kerület Elnök utca 1. - Joo pont",
@@ -185,4 +191,6 @@ Meteor.startup(function () {
     teams: [morgan1, dunakanyar],
     rounds: [round3ker1, round4ker1]
   });
+
+
 });
