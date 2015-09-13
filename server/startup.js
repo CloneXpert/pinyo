@@ -13,8 +13,8 @@ Meteor.startup(function () {
 
    var kerIcsop2oszi = {
      _id: "kerIcsop2oszi",
-     name: "II-XII-XXI. kerületi Első osztály I. csoport",
-     region: "II-XII-XXI. kerületi",
+     name: "II-XII-XXI. kerületi I. osztály 2. csoport",
+     region: "II-XII-XXI. kerület",
      division: 1,
      group: 2,
      periodStart: new Date(2015,8,7),

@@ -7,9 +7,11 @@
     <div class="team-name">
       <h3><a href="{{pathFor 'teamPage'}}">{{name}}</a></h3>
     </div>
-    <address>
-      {{address}}
-    </address>
+    <h3>
+      <address>
+        {{address}}
+      </address>
+    </h3>
     {{table}}
     {{ball}}
     {{#if rightForPermVenue}}
@@ -19,7 +21,7 @@
       <div>
         {{#each players}}
         <div class="player">
-          {{name}}: {{score}}
+          {{name}} {{score}}
         </div>
         {{/each}}
       </div>

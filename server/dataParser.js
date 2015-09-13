@@ -8,6 +8,15 @@ parseTeamDetails = function() {
       var part = split[1].split(")");
       //console.log(part2[0]+")"+"#");
       //console.log(part2[1]+"#");
+      var address;
+      if(!part[1]) {
+        // a Csepeli Vállalkozók Asztalitenisz Egyesülete II, III-nal nincs ')'
+        // gyors megoldaskent most csak 19.-nel vagunk
+        part =  split[1].split("19.");
+        address = part[0] + "19.";
+      } else {
+        address = part[0]+")";
+      }
       if(part[1]) {
         var datum = part[1].split(" ");
         var matchday = -1;
@@ -21,7 +30,7 @@ parseTeamDetails = function() {
         var kezdes=datum[2];
         var team = {
           name: split[0].trim(),
-          address: part[0]+")",
+          address: address,
           matchDay: matchday,
           matchTime: kezdes
         }
@@ -31,7 +40,7 @@ parseTeamDetails = function() {
     }
   });
 
-  var len = teams.length;
+  var len = playersRaw.teams.length;
   for(i=0;i<len;i++) {
     playersList = [];
     if(playersRaw.players[i]) {
@@ -40,14 +49,21 @@ parseTeamDetails = function() {
       });
     }
 
-    if(teams[i] && playersList) {
-      _.extend(teams[i], { players: playersList});
+    if(playersRaw.teams[i] && playersList) {
+      var teamToExtend = _.find(teams, function(team) {
+        return playersRaw.teams[i] === team.name;
+      });
+      if(teamToExtend) {
+        _.extend(teamToExtend, { players: playersList});
+      } else {
+        console.log(playersRaw.teams[i] + " not found.");
+      }
       //console.log(JSON.stringify(teams[i],null,2));
     }
   }
 
   //add placeholder when a match is not taking place
- teams.push({
+  teams.push({
     name: "x",
     address: "-",
     matchDay: 0,
@@ -97,7 +113,6 @@ parseRounds = function() {
         }
         matches.push(match);
         //console.log(JSON.stringify(match, null, 2));
-        debugger;
       }
     }
     _.extend(round, {matches: matches});

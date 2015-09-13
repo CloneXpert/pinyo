@@ -1,5 +1,4 @@
 resolveTeamsForRound = function(round) {
-  console.log(round.num);
   _.each(round.matches, function(match){
     var hteam = Teams.findOne({name: match.homeTeamName});
     if(hteam)
