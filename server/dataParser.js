@@ -45,7 +45,17 @@ parseTeamDetails = function() {
     playersList = [];
     if(playersRaw.players[i]) {
       _.each(playersRaw.players[i].split(","), function(player) {
-        playersList.push({ name: player.trim()});
+        var playerStats = _.findWhere(playerStatsRaw, {player: player.trim()});
+        if(playerStats) {
+          playersList.push({
+            name: playerStats.player,
+            gamesPlayed: playerStats.gamesplayed,
+            gamesWon: playerStats.gameswon,
+            winRate: playerStats.gameswon / playerStats.gamesplayed
+          });
+        } else {
+          playersList.push({ name: player.trim()});
+        }
       });
     }
 
@@ -123,7 +133,9 @@ parseRounds = function() {
   return rounds;
 }
 
+parsePlayerStats = function() {
 
+}
 
 
 

@@ -18,13 +18,22 @@
     <h2>Mindig pályaválasztó</h2>
     {{/if}}
     <div class="players">
-      <div>
+      <table class="table .table-striped">
+        <tr>
+          <th>Játékos</th>
+          <th>mérkőzés</th>
+          <th>győzelem</th>
+          <th>arány</th>
+        </tr>
         {{#each players}}
-        <div class="player">
-          {{name}} {{score}}
-        </div>
+        <tr>
+          <td>{{name}}</td>
+          <td>{{gamesPlayed}}</td>
+          <td>{{gamesWon}}</td>
+          <td>{{winRateFormatted}}</td>
+        </tr>
         {{/each}}
-      </div>
+      </table>
     </div>
     {{/with}}
   </div>
