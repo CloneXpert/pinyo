@@ -1,0 +1,10 @@
+<template name="newTrainingForm">
+
+  {{#autoForm schema=Schemas.Trainings collection="Trainings" id="newTrainingForm" type="insert" buttonContent="Hozzáadás"}}
+  <fieldset>
+    <legend>Új edzés</legend>
+    {{> afFieldInput name="location" options=availableLocations}}
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Hozzáadás</button>
+  {{/autoForm}}
+</template>

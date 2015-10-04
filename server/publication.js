@@ -2,6 +2,10 @@ Meteor.publish('seasons', function() {  return Seasons.find(); });
 //Meteor.publish('rounds', function() {  return Rounds.find(); });
 //Meteor.publish('teams', function() { return Teams.find(); });
 
+Meteor.publish("availableLocations", function(){
+  return Locations.find({});
+});
+
 Meteor.publish('season', function(seasonId) {
   return Seasons.find({season:seasonId});
 });

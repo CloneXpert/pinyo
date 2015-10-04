@@ -8,10 +8,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{pathFor 'main'}}">Pinyó</a>
+        <a class="navbar-brand" href="{{pathFor 'playerFinder'}}">Pinyó</a>
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
+          <li><a href="{{pathFor 'rounds'}}">Fordulók</a></li>
           <li><a href="{{pathFor 'seasonsList'}}">Bajnokságok</a></li>
           {{#if currentUser}}
           <li><a href="{{pathFor 'newSeasonForm'}}">Új szezon</a></li>

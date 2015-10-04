@@ -50,3 +50,17 @@ dontetlen,
 vesztett,
 pont,
 meccsarany
+
+
+playerFinder:
+
+jatekosok:
+  nev
+
+helyszinek:
+  cim
+
+aktivitas:
+  jatekos
+  helyszin
+  kezdes

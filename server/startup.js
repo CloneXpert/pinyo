@@ -10,6 +10,11 @@ Meteor.startup(function () {
   Seasons.remove({});
   Teams.remove({});
   Rounds.remove({});
+  Locations.remove({});
+  Trainings.remove({});
+
+  var kinai = Locations.insert({name: "kinai", address: "ujpalota"});
+  var jooPont = Locations.insert({name: "Joo pont", address: "elnok utca 1"});
 
    var kerIcsop2oszi = {
      _id: "kerIcsop2oszi",
