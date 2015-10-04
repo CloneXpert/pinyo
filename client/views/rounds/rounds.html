@@ -11,19 +11,20 @@
         </h4>
         <div class="list-group">
           {{#each matches}}
-          <div>
-            <h5>
-              <span class="{{myMatch}} {{setEnemyTeam}} {{myNextRound}}">
-                {{matchBetween}}
-              </span>
-              {{#if hasScores}}
-              <span class="label label-default">
-                {{homeTeamScore}}:{{awayTeamScore}}
-              </span>
-              {{/if}}
-            </h5>
+          <div class="{{myMatch}} {{setEnemyTeam}} {{myNextRound}}">
+            <span>
+              {{matchBetween}}
+            </span>
+            -
             {{#if matchIsNotSkipped}}
-            {{formatDateWithTime matchStarts}}
+            <b>
+              {{formatDateWithTime matchStarts}}
+            </b>
+            {{/if}}
+            {{#if hasScores}}
+            <span class="label label-default">
+              {{homeTeamScore}}:{{awayTeamScore}}
+            </span>
             {{/if}}
           </div>
           {{/each}}
