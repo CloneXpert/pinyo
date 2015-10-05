@@ -16,6 +16,12 @@ Meteor.startup(function () {
   var kinai = Locations.insert({name: "kinai", address: "ujpalota"});
   var jooPont = Locations.insert({name: "Joo pont", address: "elnok utca 1"});
 
+  Trainings.insert({
+    location: kinai,
+    periodStart: new Date(2015,8,7),
+    duration: 3
+  });
+
    var kerIcsop2oszi = {
      _id: "kerIcsop2oszi",
      name: "II-XII-XXI. kerületi I. osztály 2. csoport",

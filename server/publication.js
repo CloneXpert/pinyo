@@ -6,6 +6,10 @@ Meteor.publish("availableLocations", function(){
   return Locations.find({});
 });
 
+Meteor.publish("activeTrainings", function(){
+  return Trainings.find({});
+});
+
 Meteor.publish('season', function(seasonId) {
   return Seasons.find({season:seasonId});
 });

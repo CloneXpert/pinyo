@@ -1,5 +1,8 @@
 <template name="playerFinder">
 
 <div>Játékos kereső</div>
+{{#each activeTrainings}}
+{{location}} {{periodStart}} {{duration}}
+{{/each}}
 <a href="{{pathFor 'newTrainingForm'}}">Új edzés</a>
 </template>

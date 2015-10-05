@@ -8,10 +8,3 @@ Template.newTrainingForm.helpers({
     return locations;
   }
 });
-
-Template.newTrainingForm.events({
-  'submit form': function(event, template){
-    event.preventDefault();
-    console.log("submitted");
-  }
-});
