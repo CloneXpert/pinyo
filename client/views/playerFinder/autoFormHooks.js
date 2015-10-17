@@ -7,6 +7,10 @@ var formHooks = {
 
       return doc;
     }
+  },
+  onSuccess: function (formType, doc) {
+    Router.go('/');
+    // Router.go('page',{_id: this.docId}); in case we want to go to update page directly
   }
 }
 
