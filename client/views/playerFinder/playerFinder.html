@@ -2,13 +2,19 @@
   <div>Játékos kereső</div>
   {{#each activeTrainings}}
   <div>
-    <span>{{user}}</span>
-    <span>{{createdAt}}</span>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span>{{userId}}</span>
+        <span>{{createdAt}}</span>
 
-    <span>{{location}}</span>
-    <span>{{periodStart}}</span>
-    <span>{{duration}}</span>
-    <span>{{#quickRemoveButton collection="Trainings" _id=this._id}}Törlés{{/quickRemoveButton}}</span>
+        <span>{{location}}</span>
+        <span>{{periodStart}}</span>
+        <span>{{duration}}</span>
+        {{#quickRemoveButton collection="Trainings" _id=this._id}}
+          Törlés
+        {{/quickRemoveButton}}
+      </li>
+    </ul>
   </div>
   {{/each}}
   <a href="{{pathFor 'newTrainingForm'}}">Új edzés</a>
