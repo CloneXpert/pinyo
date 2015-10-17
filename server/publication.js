@@ -14,6 +14,10 @@ Meteor.publish("training", function(id){
   return Trainings.find(id);
 });
 
+Meteor.publish("location", function(id){
+  return Locations.find(id);
+});
+
 Meteor.publish('season', function(seasonId) {
   return Seasons.find({season:seasonId});
 });

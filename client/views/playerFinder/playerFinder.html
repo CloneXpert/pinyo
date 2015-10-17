@@ -1,5 +1,6 @@
 <template name="playerFinder">
-  <div>Játékos kereső</div>
+  <p class="text-primary">Játékos kereső</p>
+  <a href="{{pathFor 'newTrainingForm'}}">Új edzés</a>
   {{#each activeTrainings}}
   <div>
     <ul class="list-group">
@@ -9,16 +10,15 @@
         <span>{{userId}}</span>
         <span>{{createdAt}}</span>
 
-        <span>{{location}}</span>
+        <span><a href="{{pathFor 'locationDetails' _id=location}}">{{locationName location}}</a></span>
         <span>{{periodStart}}</span>
         <span>{{duration}}</span>
-        <span><a href="{{pathFor 'updateTrainingForm' _id=this._id}}">Módosítás</a></span>
+        <span><a href="{{pathFor 'updateTrainingForm' }}">Módosítás</a></span>
         {{#quickRemoveButton collection="Trainings" _id=this._id}}
-          Törlés
+        Törlés
         {{/quickRemoveButton}}
       </li>
     </ul>
   </div>
   {{/each}}
-  <a href="{{pathFor 'newTrainingForm'}}">Új edzés</a>
 </template>
