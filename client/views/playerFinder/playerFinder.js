@@ -7,5 +7,11 @@ Template.playerFinder.helpers({
     if(location) {
       return location.name;
     }
-  }
+  },
+  userProfile: function(id) {
+    var user = Meteor.users.findOne(id);
+    if(user) {
+      return user.username;
+    }
+  },
 });

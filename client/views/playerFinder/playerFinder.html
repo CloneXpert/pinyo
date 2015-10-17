@@ -7,7 +7,7 @@
       <li class="list-group-item">
         <span>{{this._id}}</span>
 
-        <span>{{userId}}</span>
+        <span><a href="{{pathFor 'userDetails' _id=userId}}">{{userProfile userId}}</a></span>
         <span>{{createdAt}}</span>
 
         <span><a href="{{pathFor 'locationDetails' _id=location}}">{{locationName location}}</a></span>
