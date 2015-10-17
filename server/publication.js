@@ -10,6 +10,10 @@ Meteor.publish("activeTrainings", function(){
   return Trainings.find({});
 });
 
+Meteor.publish("training", function(id){
+  return Trainings.find(id);
+});
+
 Meteor.publish('season', function(seasonId) {
   return Seasons.find({season:seasonId});
 });

@@ -4,12 +4,15 @@
   <div>
     <ul class="list-group">
       <li class="list-group-item">
+        <span>{{this._id}}</span>
+
         <span>{{userId}}</span>
         <span>{{createdAt}}</span>
 
         <span>{{location}}</span>
         <span>{{periodStart}}</span>
         <span>{{duration}}</span>
+        <span><a href="{{pathFor 'updateTrainingForm' _id=this._id}}">Módosítás</a></span>
         {{#quickRemoveButton collection="Trainings" _id=this._id}}
           Törlés
         {{/quickRemoveButton}}

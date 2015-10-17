@@ -1,0 +1,16 @@
+<template name="updateTrainingForm">
+
+  {{#autoForm schema=Schemas.Trainings collection="Trainings" id="updateTrainingForm" type="update" doc=this buttonContent="Módosítás"}}
+  <fieldset>
+    <legend>Új edzés</legend>
+    <!-- TODO: this will pick up the location id itself instead of display value/ value pair -->
+    {{> afQuickField name="location" options=availableLocations value=selectedLocation}}
+    {{> afQuickField name="periodStart"}}
+    {{> afQuickField name="duration"}}
+    <div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+     <button type="reset" class="btn btn-default">Reset</button>
+   </div>
+  </fieldset>
+  {{/autoForm}}
+</template>
